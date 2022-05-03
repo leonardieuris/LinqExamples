@@ -1,4 +1,4 @@
-﻿using System.Linq;
+﻿using Human.Model;
 using Human;
 
 namespace LinqConsoleApp
@@ -89,20 +89,6 @@ namespace LinqConsoleApp
         }
 
 
-
-        public int SumUnDatoQualsiasi()
-        {
-            return BaseData.Sum(x => x.UnDatoQualasiasi);
-        }
-
-
-        public int SumUnDatoQualsiasi(string surname)
-        {
-            return BaseData
-                .Where(x=>x.Surname==surname)
-                .Sum(x => x.UnDatoQualasiasi);
-        }
-
         public int GetAllFemale()
         {
             return BaseData.Count(x => x.Gender.Equals("Female"));
@@ -114,7 +100,7 @@ namespace LinqConsoleApp
             var count = 0;
             foreach (var item in BaseData)
             {
-                if (item.Gender.Equals("Female")) ;
+                if (item.Gender.Equals("Female"))
                 count++;
             }
             return count;

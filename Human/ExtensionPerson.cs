@@ -1,4 +1,6 @@
-﻿namespace Human
+﻿using Human.Model;
+
+namespace Human
 {
     public static class ExtensionPerson
     {

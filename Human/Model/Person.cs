@@ -1,13 +1,12 @@
-﻿namespace Human
+﻿namespace Human.Model
 {
     public class Person
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Gender { get; set; }
         public DateTime Birthday { get; set; }
-
-        public int UnDatoQualasiasi { get; set; }
-
+        public string Address { get; set; }
     }
 }
